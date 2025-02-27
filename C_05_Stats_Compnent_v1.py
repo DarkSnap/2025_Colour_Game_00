@@ -1,4 +1,3 @@
-from sre_parse import parse_template
 from tkinter import *
 from functools import partial  # To prevent unwanted windows
 
@@ -68,7 +67,8 @@ class Play:
         self.game_frame = Frame(self.play_box)
         self.game_frame.grid(padx=10, pady=10)
 
-        self.heading_label = Label(self.game_frame, text="Colour Quest", font=("Arial", "16", "bold"),
+        self.heading_label = Label(self.game_frame, text="Colour Quest", font=("Arial",
+                                                                               "16" ,"bold"),
                                    padx=5, pady=5)
         self.heading_label.grid(row=0)
 
@@ -187,11 +187,6 @@ class Stats:
                                      command=partial(self.close_stats,
                                                      partner))
         self.dismiss_button.grid(row=8, padx=10, pady=10)
-
-
-
-
-
 
 
     def close_stats(self, partner):
